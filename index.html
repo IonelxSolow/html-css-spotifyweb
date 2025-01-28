@@ -7,7 +7,7 @@
     <title>Spotify Web</title>
   </head>
 
-  <body>
+  <body class="debug">
     <!-- #region LEFT SIDEBAR -->
     <nav class="sidebar d-flex">
       <div class="top_sidebar">
@@ -66,20 +66,23 @@
         </div>
         <hr />
         <div class="p-user">
-          <img src="./assets/img/profile.svg" alt="Profile icon" /><span>John Doe</span>
+          <img src="./assets/img/profile.svg" alt="Profile icon" /><span
+            >John Doe</span
+          >
         </div>
       </div>
     </nav>
     <!-- #endregion LEFT SIDEBAR -->
     <!-- #region MAIN-->
-    <main class="top">
-      <div></div>
+    <main id="main_page">
+        <div class="upgrade_buttom d-flex"><a href="#">EFFETUA L'UPGRADE</a></div>
+      
       <div></div>
     </main>
     <!-- #endregion MAIN-->
     <!-- #region BOTTOM CONTROLS -->
     <footer class="bottom_controls d-flex">
-         <!-- #region INFO ALBUM LEFT -->
+      <!-- #region INFO ALBUM LEFT -->
       <div class="bottom_info_left d-flex">
         <div class="info_left">
           <div>immagine album</div>
@@ -87,33 +90,36 @@
             <h4>titolo brano</h4>
             <p>Brano</p>
             <p>Nome</p>
-        </div>
+          </div>
         </div>
         <div class="like_and_folder">
-            <p>icona heart</p>
-            <p>icona folder</p>
+          <p>icona heart</p>
+          <p>icona folder</p>
         </div>
       </div>
       <!-- #endregion INFO ALBUM LEFT -->
       <!-- #region PLAYER CONTROLS AND PROGRESS BAR -->
       <div class="player_container">
         <div class="controls_button d-flex">
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-            <div>4</div>
-            <div>5</div>
+          <span>1</span>
+          <span>2</span>
+          <span>3</span>
+          <span>4</span>
+          <span>5</span>
         </div>
         <div class="progress_bar"></div>
       </div>
-       <!-- #endregion PLAYER CONTROLS AND PROGRESS BAR -->
+      <!-- #endregion PLAYER CONTROLS AND PROGRESS BAR -->
       <!-- #region VOLUME AND ICON RIGHT -->
-       <div class="volume_icon_right d-flex">
-        <span>menu</span>
-        <span>monitor</span>
-        <span>volume</span>
-        <div class="volume_progress_bar"></div>
-       <!-- #endregion VOLUME AND ICON RIGHT -->
+      <div class="volume_icon_right d-flex">
+        <div class="icon_x d-flex">
+        <span>menu |</span>
+        <span>monitor |</span>
+        <span>volume |</span>
+        <div class="volume_progress_bar">vvv</div>
+    </div>
+      </div>
+      <!-- #endregion VOLUME AND ICON RIGHT -->
     </footer>
     <!-- #endregion BOTTOM CONTROLS -->
   </body>

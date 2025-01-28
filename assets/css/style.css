@@ -13,6 +13,13 @@
   --spt-primary-color-light: #;
   --spt-text-color: #;
 }
+
+.debug{
+    *{
+        border: 1px solid black;
+    }
+}
+
 img {
     width: 100%;
   }
@@ -84,6 +91,55 @@ body {
   }
 }
 /* #endregion SIDEBAR */
+
+/* #region MAIN PAGE CONTENT */
+#main_page{
+    position: fixed;
+    top: 0;
+    left: 50px;
+    height: calc(100vh - 90px);
+    width: calc(100vw - 50px);
+    overflow-y: auto;
+
+}
+/* #region TOP MAIN-UPGRADE */
+.upgrade_buttom{
+    padding-right: 5px;
+    justify-content: flex-end;
+    background-color: gray;
+   align-items: center;
+   height: 90px;
+   a{
+    text-decoration: none;
+    color: white;
+      padding: 1rem 2rem;
+      border-color: white;
+      border-radius: 25px;  
+   }
+   a:hover{
+    color: red;
+    border-color: red;
+  }
+}
+/* #endregion TOP MAIN-UPGRADE*/
+
+/* #region  UNDER-TOP-TYPE-LIST*/
+
+/* #endregion  UNDER-TOP-TYPE-LIST*/
+
+/* #region RECENTLY-PLAYED-ROW*/
+/* #endregion RECENTLY-PLAYED-ROW*/
+
+/* #region CREATED-FOR-USER-ROW */
+/* #endregion CREATED-FOR-USER-ROW */
+
+/* #region MOST-POPULAR-ARTIST */
+/* #endregion MOST-POPULAR-ARTIST */
+
+
+/* #endregion MAIN PAGE CONTENT */
+
+/* #region FOOTER BOTOM CONTROLS */
 .bottom_controls {
     justify-content: space-between;
     align-items: center;
@@ -93,8 +149,28 @@ body {
   background-color: blueviolet;
   height: 90px;
   width: 100%;
-}
+  .bottom_info_left{
+    align-items: center;
+  }
 
+  .bottom_info_left, .player_container, .volume_icon_right{
+    padding: 5px;
+    background-color: yellowgreen;
+    .info_left{
+        background-color: green;
+    }
+    .controls_button{
+        background-color: green;
+    }
+    .icon_x span{
+        background-color: green;
+    }
+  
+
+  }
+
+}
+/* #endregion FOOTER BOTOM CONTROLS */
 
 /* ################ */
 
