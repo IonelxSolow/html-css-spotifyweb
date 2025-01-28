@@ -1,47 +1,93 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-*
-{
+/* #region COMMON  */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
   font-family: "Montserrat", serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-:root{
-    --spt-body-color:#;
-    --spt-side-color:#;
-    --spt-primary-color:#;
-    --spt-primary-color-light:#;
-    --spt-text-color:#;
+:root {
+  --spt-body-color: #;
+  --spt-side-color: #;
+  --spt-primary-color: #;
+  --spt-primary-color-light: #;
+  --spt-text-color: #;
 }
 
-body{
-    height: calc(100vh - 90px);
-    background-color: aqua;
-}
-.sidebar{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 50px;
-    height: calc(100vh - 90px);
-    background-color: red;
-    header{
-        height: 40px;
-        .logo_text{
-        display: none;
-        }
-        
-    }
-    #playlist_nav{
-        display: none;
-    }
+.d-flex {
+  display: flex;
 }
 
-footer{
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    background-color: blueviolet;
-    height: 90px;
-    width: 100%;
+.text_center {
+  text-align: center;
+}
+/* #endregion COMMON */
+body {
+  height: calc(100vh - 90px);
+  background-color: aqua;
+}
+.sidebar {
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: calc(100vh - 90px);
+  background-color: red;
+
+  header {
+    background-color: brown;
+    height: 40px;
+    padding: 5px;
+    vertical-align: center;
+    .small_logo {
+      height: 100%;
+    }
+    .logo_text {
+      display: none;
+    }
+  }
+  .menu {
+    padding: 5px;
+    background-color: fuchsia;
+    span {
+      display: none;
+    }
+    ul li {
+      padding: 10px;
+    }
+  }
+  #playlist_nav {
+    display: none;
+  }
+  .dwn-app_and_p_user {
+    background-color: green;
+    .dwn-app,
+    .p-user {
+      padding: 10px;
+    }
+    span,
+    hr {
+      display: none;
+    }
+  }
+}
+img {
+  width: 100%;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: blueviolet;
+  height: 90px;
+  width: 100%;
+}
+/* ################ */
+
+@media screen and (min-width: 552px) {
+  * {
+    display: none;
+  }
 }

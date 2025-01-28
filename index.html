@@ -4,23 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Spotify</title>
+    <title>Spotify Web</title>
   </head>
 
   <body>
     <!-- #region LEFT SIDEBAR -->
-    <nav class="sidebar">
+    <nav class="sidebar d-flex">
+    <div class="top_sidebar">
       <header>
         <img class="small_logo" src="./assets/img/logo-small.svg" alt="Spotify logo">
         <img class="logo_text" src="./assets/img/logo.svg" alt="logo with text 'Spotify'">
       </header>
-      <div class="menu">
+      
+      <div class="menu text_center">
             <ul>
-                <li>Home</li>
-                <li>Cerca</li>
-                <li>La tua libreria</li>
+                <li>Icona<span>Home</span></li>
+                <li>Icona<span>Cerca</span></li>
+                <li>Icona<span>La tua libreria</span></li>
             </ul>
       </div>
+
       <div id="playlist_nav">
       <h4>PLAYLIST</h4>
       <ul>
@@ -34,10 +37,11 @@
         <li>Nome Playlist</li>
       </ul>
      </div>
-     <div>
-        icona + <span>installa app</span>
+    </div>
+     <div class="dwn-app_and_p_user text_center">
+       <div class="dwn-app">icona + <span>installa app</span></div>
         <hr>
-        icona + <span>John Doe</span>
+        <div class="p-user">icona + <span>John Doe</span></div>
      </div>
     </nav>
     <!-- #endregion LEFT SIDEBAR -->
