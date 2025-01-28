@@ -10,49 +10,111 @@
   <body>
     <!-- #region LEFT SIDEBAR -->
     <nav class="sidebar d-flex">
-    <div class="top_sidebar">
-      <header>
-        <img class="small_logo" src="./assets/img/logo-small.svg" alt="Spotify logo">
-        <img class="logo_text" src="./assets/img/logo.svg" alt="logo with text 'Spotify'">
-      </header>
-      
-      <div class="menu text_center">
-            <ul>
-                <li><img src="./assets/img/home.svg" alt="Home icon"><span>Home</span></li>
-                <li><img src="./assets/img/search.svg" alt="Search icon"><span>Cerca</span></li>
-                <li><img src="./assets/img/libreria.svg" alt="Library icon"><span>La tua libreria</span></li>
-            </ul>
-      </div>
+      <div class="top_sidebar">
+        <header>
+          <img
+            class="small_logo"
+            src="./assets/img/logo-small.svg"
+            alt="Spotify logo"
+          />
+          <img
+            class="logo_text"
+            src="./assets/img/logo.svg"
+            alt="logo with text 'Spotify'"
+          />
+        </header>
 
-      <div id="playlist_nav">
-      <h4>PLAYLIST</h4>
-      <ul>
-        <li>Icona + Crea Playlist</li>
-        <li>Nome Playlist</li>
-        <li>Nome Playlist</li>
-        <li>Nome Playlist</li>
-        <li>Nome Playlist</li>
-        <li>Nome Playlist</li>
-        <li>Nome Playlist</li>
-        <li>Nome Playlist</li>
-      </ul>
-     </div>
-    </div>
-     <div class="dwn-app_and_p_user text_center">
-       <div class="dwn-app"><img src="./assets/img/download.svg" alt=""><span>installa app</span></div>
-        <hr>
-        <div class="p-user"><img src="./assets/img/profile.svg" alt=""><span>John Doe</span></div>
-     </div>
+        <div class="menu text_center">
+          <ul>
+            <li>
+              <img src="./assets/img/home.svg" alt="Home icon" /><span
+                >Home</span
+              >
+            </li>
+            <li>
+              <img src="./assets/img/search.svg" alt="Search icon" /><span
+                >Cerca</span
+              >
+            </li>
+            <li>
+              <img src="./assets/img/libreria.svg" alt="Library icon" /><span
+                >La tua libreria</span
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div id="playlist_nav">
+          <h4>PLAYLIST</h4>
+          <ul>
+            <li>Icona + Crea Playlist</li>
+            <li>Nome Playlist</li>
+            <li>Nome Playlist</li>
+            <li>Nome Playlist</li>
+            <li>Nome Playlist</li>
+            <li>Nome Playlist</li>
+            <li>Nome Playlist</li>
+            <li>Nome Playlist</li>
+          </ul>
+        </div>
+      </div>
+      <div class="dwn-app_and_p_user text_center">
+        <div class="dwn-app">
+          <img src="./assets/img/download.svg" alt="Download icon" /><span
+            >installa app</span
+          >
+        </div>
+        <hr />
+        <div class="p-user">
+          <img src="./assets/img/profile.svg" alt="Profile icon" /><span>John Doe</span>
+        </div>
+      </div>
     </nav>
     <!-- #endregion LEFT SIDEBAR -->
+    <!-- #region MAIN-->
     <main class="top">
       <div></div>
       <div></div>
     </main>
-<!-- #region -->
-<!-- #endregion -->
-    <footer class="bottom_controls">
-
+    <!-- #endregion MAIN-->
+    <!-- #region BOTTOM CONTROLS -->
+    <footer class="bottom_controls d-flex">
+         <!-- #region INFO ALBUM LEFT -->
+      <div class="bottom_info_left d-flex">
+        <div class="info_left">
+          <div>immagine album</div>
+          <div>
+            <h4>titolo brano</h4>
+            <p>Brano</p>
+            <p>Nome</p>
+        </div>
+        </div>
+        <div class="like_and_folder">
+            <p>icona heart</p>
+            <p>icona folder</p>
+        </div>
+      </div>
+      <!-- #endregion INFO ALBUM LEFT -->
+      <!-- #region PLAYER CONTROLS AND PROGRESS BAR -->
+      <div class="player_container">
+        <div class="controls_button d-flex">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+        </div>
+        <div class="progress_bar"></div>
+      </div>
+       <!-- #endregion PLAYER CONTROLS AND PROGRESS BAR -->
+      <!-- #region VOLUME AND ICON RIGHT -->
+       <div class="volume_icon_right d-flex">
+        <span>menu</span>
+        <span>monitor</span>
+        <span>volume</span>
+        <div class="volume_progress_bar"></div>
+       <!-- #endregion VOLUME AND ICON RIGHT -->
     </footer>
+    <!-- #endregion BOTTOM CONTROLS -->
   </body>
 </html>

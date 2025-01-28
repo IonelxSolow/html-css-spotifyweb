@@ -84,8 +84,9 @@ body {
   }
 }
 /* #endregion SIDEBAR */
-
-footer {
+.bottom_controls {
+    justify-content: space-between;
+    align-items: center;
   position: fixed;
   bottom: 0;
   left: 0;
