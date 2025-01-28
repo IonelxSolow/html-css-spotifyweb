@@ -13,6 +13,9 @@
   --spt-primary-color-light: #;
   --spt-text-color: #;
 }
+img {
+    width: 100%;
+  }
 
 .d-flex {
   display: flex;
@@ -21,18 +24,19 @@
 .text_center {
   text-align: center;
 }
-/* #endregion COMMON */
 body {
-  height: calc(100vh - 90px);
-  background-color: aqua;
-}
+    height: calc(100vh - 90px);
+    background-color: aqua;
+  }
+/* #endregion COMMON */
+/* #region SIDEBAR */
 .sidebar {
   flex-direction: column;
   justify-content: space-between;
   position: fixed;
   top: 0;
   left: 0;
-  width: 100px;
+  width: 50px;
   height: calc(100vh - 90px);
   background-color: red;
 
@@ -55,7 +59,7 @@ body {
       display: none;
     }
     ul li {
-      padding: 10px;
+      padding: 10px 5px;
     }
   }
   #playlist_nav {
@@ -63,9 +67,15 @@ body {
   }
   .dwn-app_and_p_user {
     background-color: green;
-    .dwn-app,
+    .dwn-app{
+        padding: 15px ;
+    }
     .p-user {
       padding: 10px;
+      img{
+        background-color: gray;
+        border-radius: 50%;
+      }
     }
     span,
     hr {
@@ -73,9 +83,8 @@ body {
     }
   }
 }
-img {
-  width: 100%;
-}
+/* #endregion SIDEBAR */
+
 footer {
   position: fixed;
   bottom: 0;
@@ -84,6 +93,8 @@ footer {
   height: 90px;
   width: 100%;
 }
+
+
 /* ################ */
 
 @media screen and (min-width: 552px) {
