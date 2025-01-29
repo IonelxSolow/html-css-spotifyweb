@@ -37,13 +37,14 @@ img {
 }
 body {
   height: calc(100vh - 90px);
-  background-color: aqua;
+  background-color: var(--spt-body-color);
+  transition: 500ms;
 }
-.col-2 {
-  width: calc(100vw / 12 * 4);
+.col-5 {
+  width: calc(100% / 12 * 5);
 }
 .col-6 {
-  width: calc(100vw / 12 * 6);
+  width: calc(100% / 12 * 6);
 }
 /* #endregion COMMON */
 /* #region SIDEBAR */
@@ -51,6 +52,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   position: fixed;
+  overflow-y: auto;
   top: 0;
   left: 0;
   width: 50px;
@@ -124,6 +126,7 @@ body {
   }
 }
 /* #region TOP MAIN-UPGRADE */
+
 .upgrade_buttom {
   padding-right: 5px;
   justify-content: flex-end;
@@ -176,11 +179,24 @@ body {
   .row {
     flex-wrap: wrap;
     gap: 10px;
+    .card img:hover {
+    }
     .card {
-      background-color: bisque;
-      min-height: 277px;
+      text-align: center;
+      /*  background-color: bisque; */
+
       /*  width: 214px; */
       /* margin: auto; */
+      h4 {
+        color: var(--spt-text-primary-color);
+        padding: 0.7rem 0;
+      }
+      p {
+        padding: 10px 0;
+        color: var(--spt-text-secondary-color);
+        font-size: 12px;
+        font-weight: 800;
+      }
     }
   }
 }
@@ -190,6 +206,9 @@ body {
 /* #endregion CREATED-FOR-USER-ROW */
 
 /* #region MOST-POPULAR-ARTIST */
+.round_image {
+  border-radius: 50%;
+}
 /* #endregion MOST-POPULAR-ARTIST */
 
 /* #endregion MAIN PAGE CONTENT */
@@ -271,16 +290,16 @@ body {
       padding: 0.5rem;
     }
     .volume_progress_bar {
-        align-self: center;
-        width: 85px;
-        height: 4px;
-        background: #5a5a5a;
-        .vol_progress{
-            width: 17px;
+      align-self: center;
+      width: 85px;
+      height: 4px;
+      background: #5a5a5a;
+      .vol_progress {
+        width: 17px;
         height: 100%;
         background: #ffffff;
-        }
       }
+    }
   }
   /* #endregion VOLUME AND ICON RIGHT */
 }
@@ -292,4 +311,5 @@ body {
    *{
     display: none;
   }
+    
 } */
