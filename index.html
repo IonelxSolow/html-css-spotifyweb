@@ -16,81 +16,93 @@
     <title>Spotify Web</title>
   </head>
   <!-- #endregion DOCTYPE HEAD -->
-  <body class="debu">
+  <body class="debug">
     <!-- #region LEFT SIDEBAR -->
-    <nav class="sidebar d-flex">
-      <aside class="top_sidebar">
-        <header>
-          <img
-            class="small_logo"
-            src="./assets/img/logo-small.svg"
-            alt="Spotify logo"
-          />
-          <img
-            class="logo_text"
-            src="./assets/img/logo.svg"
-            alt="logo with text 'Spotify'"
-          />
-        </header>
+    <div class="top d-flex">
+      <div class="sidebar d-flex">
+        <div class="sidebar_top">
+          <div class="logo">
+            <img
+              class="logo_mobile"
+              src="./assets/img/logo-small.svg"
+              alt="Spotify small logo image"
+              width="28px"
+            />
+            <img
+              class="logo_dextop"
+              src="./assets/img/logo.svg"
+              alt="Spotify logo image"
+              width="130px"
+            />
+          </div>
+          <nav class="menu_sidebar">
+            <ul>
+              <li>
+                <a href="">
+                  <img
+                    height="22px"
+                    src="./assets/img/home.svg"
+                    alt="Home Icon"
+                  />
+                  <span>Home</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img
+                    height="22px"
+                    src="./assets/img/search.svg"
+                    alt="Search Icon"
+                  />
+                  <span>Cerca</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img
+                    height="22px"
+                    src="./assets/img/libreria.svg"
+                    alt="Library Icon"
+                  />
+                  <span>La tua libreria</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
 
-        <div class="menu text_center">
-          <ul>
-            <li>
-              <img height="22px" src="./assets/img/home.svg" alt="" />
-              <span>Home</span>
-            </li>
-            <li>
-              <img
-                height="22px"
-                src="./assets/img/search.svg"
-                alt="Search icon"
-              />
-              <span>Cerca</span>
-            </li>
-            <li>
-              <img
-                height="22px"
-                src="./assets/img/libreria.svg"
-                alt="Library icon"
-              />
-              <span>La tua libreria</span>
-            </li>
-          </ul>
-        </div>
+          <div class="playlist_nav">
+            <h3>Playlist</h3>
 
-        <section id="playlist_nav">
-          <h4>PLAYLIST</h4>
-          <ul>
-            <li><span class="create_play">+</span>Crea Playlist</li>
-            <li>Nome Playlist</li>
-            <li>Nome Playlist</li>
-            <li>Nome Playlist</li>
-            <li>Nome Playlist</li>
-            <li>Nome Playlist</li>
-            <li>Nome Playlist</li>
-            <li>Nome Playlist</li>
-          </ul>
-        </section>
-      </aside>
-      <div class="dwn-app_and_p_user text_center">
-        <div class="dwn-app">
-          <img
-            height="22px"
-            src="./assets/img/download.svg"
-            alt="Download icon"
-          />
-          <span>installa app</span>
+            <div class="add">
+              <i class="fas fa-plus-square fa-2x" aria-hidden="true"></i>
+              <span>Crea Playlist</span>
+            </div>
+
+            <ul class="playlist_items">
+              <li>Nome Playlist</li>
+              <li>Nome Playlist</li>
+              <li>Nome Playlist</li>
+              <li>Nome Playlist</li>
+              <li>Nome Playlist</li>
+              <li>Nome Playlist</li>
+              <li>Nome Playlist</li>
+            </ul>
+          </div>
         </div>
-        <hr />
-        <div class="p-user">
-          <img
-            height="22px"
-            src="./assets/img/profile.svg"
-            alt="Profile icon"
-          /><span>John Doe</span>
+        <div class="sidebar_bottom">
+          <div class="install">
+            <img height="14px" src="./assets/img/download.svg" alt="" />
+            <span>Installa app</span>
+          </div>
+          <div class="profile">
+            <img width="25px" src="./assets/img/profile.svg" alt="" />
+            <strong>John Doe</strong>
+          </div>
         </div>
       </div>
-    </nav>
+    </div>
+
+    
     <!-- #endregion LEFT SIDEBAR -->
     <!-- #region MAIN-->
     <main id="main_page">
@@ -112,34 +124,31 @@
         <h3>Recently played</h3>
         <div class="container d-flex">
           <div class="row d-flex">
-
             <!-- #region A RECENTLY PLAYED -->
 
             <div class="card col d-flex">
-             
               <div class="image_container">
                 <img
-                src="./assets/img/metal_lifting.jpg"
-                alt="Metal lifting image"
-              />
-              <div class="icon_card d-flex">
-              <i class="fa-regular fa-circle-play play_icon"></i>
-            </div>
+                  src="./assets/img/metal_lifting.jpg"
+                  alt="Metal lifting image"
+                />
+                <div class="icon_card d-flex">
+                  <i class="fa-regular fa-circle-play play_icon"></i>
+                </div>
               </div>
               <h4>Heavy Metal</h4>
               <p>Subtitle</p>
             </div>
-            
+
             <div class="card col d-flex">
-             
               <div class="image_container">
                 <img
                   src="./assets/img/stranger.jpeg"
                   alt="Stranger cover image"
                 />
-              <div class="icon_card d-flex">
-              <i class="fa-regular fa-circle-play play_icon"></i>
-            </div>
+                <div class="icon_card d-flex">
+                  <i class="fa-regular fa-circle-play play_icon"></i>
+                </div>
               </div>
               <h4>
                 Stranger Things, Vol. 1(a Netflix Original Series Soundtrack)
@@ -148,151 +157,120 @@
             </div>
 
             <div class="card col d-flex">
-             
               <div class="image_container">
                 <img
-                src="./assets/img/aquietplace.jpeg"
-                alt="A quiet place album image"
-              />
-              <div class="icon_card d-flex">
-              <i class="fa-regular fa-circle-play play_icon"></i>
-            </div>
+                  src="./assets/img/aquietplace.jpeg"
+                  alt="A quiet place album image"
+                />
+                <div class="icon_card d-flex">
+                  <i class="fa-regular fa-circle-play play_icon"></i>
+                </div>
               </div>
               <h4>A quiet place</h4>
               <p>Subtitle</p>
             </div>
 
             <div class="card col d-flex">
-             
               <div class="image_container">
                 <img src="./assets/img/split.jpeg" alt="Split album image" />
-              <div class="icon_card d-flex">
-              <i class="fa-regular fa-circle-play play_icon"></i>
-            </div>
+                <div class="icon_card d-flex">
+                  <i class="fa-regular fa-circle-play play_icon"></i>
+                </div>
               </div>
               <h4>Split</h4>
               <p>Subtitle</p>
             </div>
 
             <div class="card col d-flex">
-             
               <div class="image_container">
                 <img src="./assets/img/cure.jpeg" alt="Cure album image" />
-              <div class="icon_card d-flex">
-              <i class="fa-regular fa-circle-play play_icon"></i>
-            </div>
+                <div class="icon_card d-flex">
+                  <i class="fa-regular fa-circle-play play_icon"></i>
+                </div>
               </div>
               <h4>A cure for wellness</h4>
               <p>Subtitle</p>
             </div>
-            
+
             <div class="card col d-flex">
-             
               <div class="image_container">
                 <img
                   src="./assets/img/sinister.jpeg"
                   alt="Sinister album image"
                 />
-              <div class="icon_card d-flex">
-              <i class="fa-regular fa-circle-play play_icon"></i>
-            </div>
+                <div class="icon_card d-flex">
+                  <i class="fa-regular fa-circle-play play_icon"></i>
+                </div>
               </div>
               <h4>A quiet place</h4>
               <p>Sinister</p>
             </div>
-          </div> 
+          </div>
           <!-- #endregion A RECENTLY PLAYED -->
 
           <!-- #region CREATED FOR JONH DOE-->
 
           <h3>Creato per John Doe</h3>
           <h5>Più ascolti, più accurati saranno i suggerimenti</h5>
-          <div class="row d-flex">  
-
+          <div class="row d-flex">
             <div class="card col d-flex">
-             
               <div class="image_container">
                 <img src="./assets/img/radar.jpeg" alt="Radar image" />
-              <div class="icon_card d-flex">
-              <i class="fa-regular fa-circle-play play_icon"></i>
-            </div>
+                <div class="icon_card d-flex">
+                  <i class="fa-regular fa-circle-play play_icon"></i>
+                </div>
               </div>
               <h4>Daily Mix 1</h4>
             </div>
 
             <div class="card col d-flex">
-             
               <div class="image_container">
                 <img
-                src="./assets/img/mixdaily.jpeg"
-                alt="Mix daily album iamage"
-              />
-              <div class="icon_card d-flex">
-              <i class="fa-regular fa-circle-play play_icon"></i>
-            </div>
+                  src="./assets/img/mixdaily.jpeg"
+                  alt="Mix daily album iamage"
+                />
+                <div class="icon_card d-flex">
+                  <i class="fa-regular fa-circle-play play_icon"></i>
+                </div>
               </div>
               <h4>Daily Mix 1</h4>
             </div>
-            </div>
+          </div>
           <!-- #endregion CREATED FOR JONH DOE-->
 
           <!-- #region Artisti più popolari-->
           <h3>Artisti più popolari</h3>
           <h5>Più ascolti, più accurati saranno i suggerimenti</h5>
           <div class="row d-flex">
-
             <div class="card col d-flex">
-             
-              <div class="image_container">
-                <img
-                class="round_image"
-                src="./assets/img/youg.jpeg"
-                alt=" Youg album image"
-              />
-              <div class="icon_card d-flex">
-              <i class="fa-regular fa-circle-play play_icon"></i>
-            </div>
-              </div>
-              <h4>Lana del Rey</h4>
-            </div>
-
-            <div class="card col d-flex">
-             
-              <div class="image_container">
-                <img
-                class="round_image"
-                src="./assets/img/einaudi.jpeg"
-                alt="Immagine di Ludovico Inaudi"
-              />
-              <div class="icon_card d-flex">
-              <i class="fa-regular fa-circle-play play_icon"></i>
-            </div>
-              </div>
-              <h4>Ludovico Einaudi</h4>
-            </div>
-
-            <!-- <div class="card col">
               <div class="image_container">
                 <img
                   class="round_image"
                   src="./assets/img/youg.jpeg"
                   alt=" Youg album image"
                 />
-                <i class="fa-regular fa-circle-play play_icon"></i>
+                <div class="icon_card d-flex">
+                  <i class="fa-regular fa-circle-play play_icon"></i>
+                </div>
               </div>
               <h4>Lana del Rey</h4>
             </div>
-            <div class="card col">
+
+            <div class="card col d-flex">
               <div class="image_container">
                 <img
                   class="round_image"
                   src="./assets/img/einaudi.jpeg"
                   alt="Immagine di Ludovico Inaudi"
                 />
-                <i class="fa-regular fa-circle-play play_icon"></i>
+                <div class="icon_card d-flex">
+                  <i class="fa-regular fa-circle-play play_icon"></i>
+                </div>
               </div>
               <h4>Ludovico Einaudi</h4>
-            </div> -->
+            </div>
+
+       
           </div>
         </div>
         <!-- #endregion Artisti più popolari-->
