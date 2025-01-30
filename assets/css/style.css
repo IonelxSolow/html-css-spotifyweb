@@ -46,7 +46,6 @@ body {
 /* #endregion COMMON */
 /* #region SIDEBAR */
 .sidebar {
-  
   justify-content: space-between;
   flex-direction: column;
   background-color: var(--spt-side-color);
@@ -59,10 +58,10 @@ body {
       display: none;
     }
   }
-  li{
+  li {
     opacity: 70%;
   }
-  li:hover{
+  li:hover {
     cursor: pointer;
     opacity: 100%;
   }
@@ -104,7 +103,7 @@ body {
     gap: 0.5rem;
     padding: 0.5rem 0;
     opacity: 70%;
-    &:hover{
+    &:hover {
       cursor: pointer;
       opacity: 100%;
     }
@@ -127,7 +126,6 @@ body {
 
   .install {
     padding-bottom: 0.25rem;
-    
 
     span {
       display: none;
@@ -143,16 +141,16 @@ body {
       border-radius: 50%;
     }
 
-    
-
     strong {
       display: none;
     }
   }
-  .install, .profile{
+  .install,
+  .profile {
     opacity: 70%;
   }
-  .install:hover, .profile:hover{
+  .install:hover,
+  .profile:hover {
     cursor: pointer;
     opacity: 100%;
   }
@@ -208,7 +206,7 @@ body {
 .type_list {
   justify-content: center;
   ul {
-    li{
+    li {
       border-bottom: 2px solid greenyellow;
     }
     justify-content: center;
@@ -500,18 +498,12 @@ body {
     width: calc(100% - 230px);
   }
 
-  .now_play_title p{
-    display: inline-block
+  .now_play_title p {
+    display: inline-block;
   }
 }
 
-
-
 @media screen and (min-width: 639px) {
-  /* .top_sidebar header {
-    height: 90px;
-  } */
-
   .like_and_folder {
     display: flex;
     padding: 1rem;
