@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: 500ms;
 }
 :root {
   --spt-top-color: #080b12;
@@ -38,14 +39,12 @@ img {
 body {
   height: calc(100vh - 90px);
   background-color: var(--spt-body-color);
-  transition: 500ms;
+  
 }
-.col-5 {
-  width: calc(100% / 12 * 5);
-}
-.col-6 {
+.col {
   width: calc(100% / 12 * 6);
 }
+
 /* #endregion COMMON */
 /* #region SIDEBAR */
 .sidebar {
@@ -128,6 +127,7 @@ body {
   width: calc(100% - 50px);
   overflow-y: auto;
   .content_main {
+    flex-direction: column;
     padding: 0 1rem 1rem;
   }
   h3 {
@@ -167,7 +167,7 @@ body {
   justify-content: center;
   ul {
     justify-content: center;
-    column-gap: 12px;
+    column-gap: 13px;
     list-style: none;
     flex-wrap: wrap;
     li {
@@ -175,7 +175,7 @@ body {
       color: var(--spt-text-secondary-color);
       font-weight: 800;
       text-transform: uppercase;
-      padding: 1rem 0;
+      padding: 1rem 0.2rem;
       cursor: pointer;
     }
     li:hover {
@@ -183,19 +183,24 @@ body {
     }
   }
 }
-/* #endregion  UNDER-TOP-TYPE-LIST*/
-
+/* #endregion  UNDER-TOP-TYPE-LIST*
 /* #region RECENTLY-PLAYED-ROW*/
 .container {
+  
   width: 100%;
   flex-direction: column;
 
   .row {
     flex-wrap: wrap;
-    gap: 10px;
+    
+    
+    
+    
 
     .card {
-      position: relativ;
+      padding: 5px;
+      display: flex;
+      flex-direction: column;
       text-align: center;
       /*  background-color: bisque; */
 
@@ -282,7 +287,7 @@ body {
     .like_and_folder {
       p {
         color: var(--spt-text-secondary-color);
-        padding-left: 2rem;
+        padding: 0 5px;
         cursor: pointer;
       }
       p:hover {
@@ -292,9 +297,16 @@ body {
   }
   /* #endregion CONTAINER LEFT INFO */
   /* #region CONTROL BUTTONS PLAYER */
+  .container_play{
+    width: 40%;
+    margin: auto;
+  }
   #player_container {
-    padding: 1rem;
+    font-size: 1.7rem;
+    align-self: flex-start;
+    
     .controls_button {
+      justify-content: center;
       span {
         padding: 0.5rem;
         i {
@@ -306,25 +318,36 @@ body {
         cursor: pointer;
       }
     }
-    .progress_bar {
-      width: 100%;
-      height: 4px;
-      background: #5a5a5a;
-      .progress {
-        width: 20%;
-        height: 100%;
-        background: #ffffff;
-      }
-      .progress:hover {
-        cursor: pointer;
-        background-color: lightgreen;
-      }
+    
+  }
+  .progress_container{
+    justify-content: center;
+    align-items: center;
+    p{
+      font-size: 10px;
+      color: var(--spt-text-primary-color);
+      padding: 5px;
+    }
+  }
+  .progress_bar {
+    width: 100%;
+    height: 4px;
+    background: #5a5a5a;
+    .progress {
+      width: 20%;
+      height: 100%;
+      background: #ffffff;
+    }
+    .progress:hover {
+      cursor: pointer;
+      background-color: lightgreen;
     }
   }
   /* #endregion CONTROL BUTTONS PLAYER */
 
   /* #region VOLUME AND ICON RIGHT */
   .volume_icon_right {
+    font-size: 10px;
     padding: 1rem 0.5rem;
     .icon_x span {
       color: var(--spt-text-primary-color);
@@ -354,10 +377,12 @@ body {
 }
 /* #endregion FOOTER BOTOM CONTROLS */
 
-/* ################ */
+/* ################################################################### */
 
 @media screen and (min-width: 552px) {
+  /*  DA SISTEMARE LA SIDEBAR .......................................!!!!!!!!!!!!!!! */
   .sidebar{
+    background-color: pink;
     width: 230px;
     header{
       .small_logo{
@@ -368,7 +393,16 @@ body {
         padding: 1rem;
       }
     }
-    
+    .menu{
+      li{
+        margin-top: 10px;
+        display: flex;
+      }
+      
+     span{
+      display: block;
+     }
+    }
 
   }
   #main_page{
@@ -378,7 +412,18 @@ body {
 }
 
 @media screen and (min-width: 639px) {
-  * {
-    display: none;
+  .like_and_folder{
+    display: flex;
+    padding: 1rem;
   }
+  .col {
+    width: calc(100%/ 12 * 3);
+  }
+  
+}
+
+@media screen and (min-width: 878px) {
+.col{
+  width: calc(100% / 12 * 2);
+}
 }
